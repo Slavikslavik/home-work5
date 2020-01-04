@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Домашнее задание 5/1</title>
+</head>
+<body>
+
+	<script>
+
+		//Привет. Вам нужно написать функцию getResult. Функция принимает 1 и 2 параметров - числа, а 3 параметр - математический знак и возвращает результат. Например - getResult(5,6,'+') - 11, а getResult(5,6,'*') - 30.
+
+
+		function get (a,b,c) {
+
+			if(c === `+`) {
+				return a + b;
+
+			} else if(c === `-`) {
+				return a - b;
+
+			} else if(c === `/` ) {
+				return a / b;
+
+			} else if(c === `*`) {
+				return a * b; 
+
+			}else{
+				return `NO`
+			}
+		}
+        var result = get(2,3,`+`);
+		alert(result);
+
+
+	</script>
+	
+</body>
+</html>

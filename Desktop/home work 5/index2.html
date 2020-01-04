@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home-work5/2</title>
+</head>
+<body>
+	<script>
+		
+		//В качестве приятного бонуса. Напишите функцию, которая принимает строку, а вторым аргументом - массив символов, которые нужно исключить из строки. В результате foo('hello', ['o']) - 'hell'
+
+		function foo(string,arr){
+			//console.log(arguments);
+			var new_string = ``;
+
+			for (var i = 0; i < string.length; i++) {
+
+					if (arr.includes(string[i])) {
+
+					true;
+
+					}else{
+
+					new_string += string[i];
+
+					}
+
+				}
+			
+			return new_string;
+	}
+		alert(foo(`hello`,[`e`,`l`]));
+
+	</script>
+	
+</body>
+</html>
