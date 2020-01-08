@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home-work6</title>
+</head>
+<body>
+	<script>
+		/* Вам нужно написать свою реализацию метода forEach. Это должна быть функция, которая принимает массив и функцию-коллбэк, которая будет вызвана для каждого элемента массива */
+
+		//Массив 
+
+		let array = [`Hello`,`world`,`js`,];
+		let array1 = [{name:`Oleg`},{name:`Ivan`}]
+		//Функция CallBack
+
+		function FUcallBack (el,i,arr) {
+			
+			console.log(el,i,arr);
+		}
+
+		
+		function ForEach (arr,call){
+
+			if(typeof call === `function`) {
+
+			 array.forEach(FUcallBack);
+			 array1.forEach(FUcallBack);				
+
+			}else{
+				console.log(`consoleLOH`)
+			}
+			//console.log(arguments)
+		}
+		
+		ForEach(array,FUcallBack);
+		
+		
+	
+
+		
+		
+	</script>
+</body>
+</html>
